@@ -108,6 +108,16 @@ resource "aws_eks_addon" "ebs-csi" {
 */
 ```
 
+terraform.tf 내 cloud 속성 주석처리
+```
+/*
+  cloud {
+    workspaces {
+      name = "learn-terraform-eks"
+    }
+  }
+*/
+```
 
 variables.tf
 - 사용할 리전으로 정보 수정 
